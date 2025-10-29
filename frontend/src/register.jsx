@@ -9,7 +9,7 @@ export default function Register() {
 
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e) => { 
     e.preventDefault();
     setMsg('');
 

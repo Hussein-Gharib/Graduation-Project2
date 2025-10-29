@@ -1,11 +1,11 @@
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "./components/navbar.jsx"; 
 import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Login from "./Login.jsx";
-import Register from "./Register.jsx"; 
+import Register from "./register.jsx"; 
 
 function AppLayout() {
   return (
@@ -26,7 +26,7 @@ function ProtectedRoute({ children }) {
 export default function App() {
   return (
     <Routes>
-     
+      
       <Route path="/" element={<Navigate to="/login" replace />} />
 
       
